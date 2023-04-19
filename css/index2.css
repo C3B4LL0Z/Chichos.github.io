@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu a:hover {
+    color: #ff9408;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    display: block;
+}
+
+.navbar-toggle a span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle.active a:nth-of-type(1) span {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active a:nth-of-type(2) span {
+    opacity: 0;
+}
+
+.navbar-toggle.active a:nth-of-type(3) span {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (min-width: 768px) {
+    .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.titleR {
+    text-align: center;
+}
+
+.titleR h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    color: #ffc508;
+    -webkit-text-stroke: 1px #ff9408;
+}
+
+
+.titleR p {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.hr1 {
+    height: 1px;
+    background-color: #333;
+    border: none;
+    margin: 10px 0;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: #333;
+    }
+
+    50% {
+        background-color: #ff7f08;
+    }
+
+    100% {
+        background-color: #333;
+    }
+}
+
+.containerDominicales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+}
+
+.titleDominicales {
+    margin-bottom: 1px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dominicales {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+.dominicales img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dominicales img:hover {
+    transform: scale(1.2);
+}
+
+.buttonPedirPromo {
+    background-color: #ffc508;
+    color: white;
+    text-decoration: none;
+    padding: 10px 385px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buttonPedirPromo:hover {
+    background-color: #ff9408;
+}
+
+.hr2 {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 800px;
+}
+.fixed-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.fixed-sidebar a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 44px;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.fixed-sidebar a.whatsapp {
+    background-color: green;
+}
+
+.fixed-sidebar a.facebook {
+    background-color: blue;
+}
+
+.fixed-sidebar a.instagram {
+    background-color: pink;
+}
+.quienSomos {
+    background-color: #cccccc2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    text-align: center;
+}
+
+.quienSomos h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quienSomos p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+.maps {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 90vh 1fr;
+    grid-gap: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.titleDireccion {
+    color: #FFDB58;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.titleDireccion i {
+    color: #FFDB58;
+}
+
+.titleHorario {
+    color: #FFDB58;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.titleHorario i {
+    color: #FFDB58;
+}
+.titletelefono {
+    color: #FFDB58;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.titletelefono i {
+    color: #FFDB58;
+}
+
+#map {
+    height: 40vh;
+    width: 80%;
+    grid-row: 1 / span 2;
+    border-radius: 5%;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los iconos */
+.footer .fab {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+}
+
+/* Estilos para los enlaces de los iconos */
+.footer .fab a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces de los iconos al pasar el mouse sobre ellos */
+.footer .fab a:hover {
+    color: #007bff;
+}
+
+/* Estilos para alinear los iconos hacia la izquierda */
+.footer .social-icons {
+    text-align: left;
+}
+
+/* Estilos para la línea horizontal (hr) */
+.footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #fff;
+    opacity: 0.3;
+}
+.notification-bar {
+    background-color: #ffcc00;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.notification-bar p {
+    margin: 0;
+    color: #000;
+}
+
+.notification-close {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.notification-close:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicho's Asados y Comidas Rapidas</title>
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="icon" type="img/enc" href="img/logo.enc">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e38b0fa889.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">Chicho's Restaurante</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#qns">Acerca de</a></li>
+                <li><a href="#cont">Contacto</a></li>
+                <li><a href="index2.html">Restaurante</a></li>
+            </ul>
+        </div>
+        <div class="navbar-toggle">
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+        </div>
+    </nav>
+    <div class="notification-bar">
+        <p>De lunes a sabados! ¡Deliciosos almuerzos ejecutivos!</p>
+        <a href="#" class="notification-close">cerrar</a>
+    </div>
+    <div class="container">
+        <div class="titleR">
+            <h1>Chicho's restaurante</h1>
+            <p>Cali, Colombia</p>
+            <hr class="hr1">
+        </div>
+    </div>
+    <div class="containerDominicales">
+        <h2 class="titleDominicales">almuerzos dominicales</h2>
+        <div class="dominicales">
+            <img src="img/restaurante/chuleta.jpg">
+            <img src="img/restaurante/gallina.jpg">
+            <img src="img/restaurante/tilapia.jpg">
+        </div><br>
+        <a id="qns" href="https://api.whatsapp.com/send?phone=573187217532&text=Hola%20cuentanos%20que%20deseas%20el%20dia%20de%20hoy"
+            rel="noopener noreferrer" target="_blank" class="buttonPedirPromo">pedir</a>
+        <hr class="hr2">
+    </div>
+    <div class="fixed-sidebar">
+        <a href="https://api.whatsapp.com/send?phone=573187217532&text=Hola%20cuentanos%20que%20deseas%20el%20dia%20de%20hoy"
+            rel="noopener noreferrer" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/chichos_comidasrapidas/" rel="noopener noreferrer" target="_blank"
+            class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div  class="quienSomos">
+        <h1>¿quienes somos?</h1>
+        <p>Es un negocio familiar de alta tradición culinaria, especializada en comida rápida con una variedad de
+            productos para deleitar el paladar de nuestros clientes, ajustándonos a las nuevas tendencias gastronómicas,
+            estando siempre a la vanguardia mientras ofrecemos a los clientes experiencias de sabores.</p>
+    </div><br><br>
+    <div id="cont" class="maps">
+        <div class="info">
+            <h3 class="titleDireccion"><i class="fa-solid fa-location-dot"></i>Dirección</h3>
+            <p>Cra 1A #70A05 Bloque 299 Apto 102 B/ <br> Los Alcazares, Cali, Valle del Cauca</p>
+        </div>
+        <div class="info">
+            <h3 class="titleHorario"><i class="fa-regular fa-clock"></i>Horario</h3>
+            <p>
+                Martes 11:00-15:30 <br>
+                Miércoles 11:00-15:30 <br>
+                Jueves 11:00-15:30 <br>
+                Viernes 11:00-15:30 <br>
+                Sábado 11:00-15:30<br>
+                Domingo 11:00-15:30
+            </p>
+        </div>
+        <div class="info">
+            <h3 class="titletelefono"><i class="fa-solid fa-phone-volume"></i>telefono</h3>
+            <p>+57 318-721-7532</p>
+        </div>
+        <div id="map"></div>
+    </div>
+    <div class="footer">
+        <h3>contactanos</h3>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" class="fab"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chichos_comidasrapidas/" target="_blank" class="fab"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=573187217532&text=Hola%20cuentanos%20que%20deseas%20el%20dia%20de%20hoy"
+                target="_blank" class="fab"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <hr>
+        <p class="p1">Todos los derechos reservados. &copy; 2023 Chicho's</p>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            document.querySelector('.notification-close').addEventListener('click', function () {
+                document.querySelector('.notification-bar').style.display = 'none';
+            });
+        </script>
+</body>
+
+</html>
